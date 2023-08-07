@@ -1,0 +1,52 @@
+.photo-container img {
+  display: block;
+  height: 100%;
+  margin: auto;
+}
+
+@media screen and (max-width: 4000px) {
+  .photo-container img {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 3000px) {
+  .photo-container img {
+    width: 97%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .photo-container img {
+    width: 96%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .photo-container img {
+    width: 92%;
+  }
+}
+
+.photo-container {
+  margin-top: 20px;
+  padding: 25px 0 50px 0;
+}
+
+.photo {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+
+.photo h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.photo p {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 40px 0 75px 0;
+}

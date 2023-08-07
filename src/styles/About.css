@@ -1,0 +1,44 @@
+.about {
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  padding: 25px 0 100px 0;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about-img {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 40px;
+  position: relative;
+  box-shadow: 0 0 0 8px indigo, 0 0 0 16px violet;
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.about p {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 30px 0 50px 0;
+  flex: 1;
+}

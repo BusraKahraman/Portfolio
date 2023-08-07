@@ -1,0 +1,37 @@
+.contact {
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  padding: 25px 0 25px 0;
+}
+
+.contact img {
+  width: 25%;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+.contact img:hover {
+  transform: scale(1.1);
+}
+
+.links {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  display: inline-block;
+  position: relative;
+}
+
+.hidden-text {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  visibility: hidden;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.links:hover .hidden-text {
+  visibility: visible;
+}
