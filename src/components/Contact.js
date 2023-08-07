@@ -2,10 +2,14 @@ import '../styles/Contact.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import linkedIn from '../assets/img/linkedin-contact.png';
 import resume from '../assets/img/pdf.png';
+import resumeEn from '../assets/resumes/resumeEn.pdf';
+import resumeTr from '../assets/resumes/resumeTr.pdf';
 import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const resumeLink = i18n.language === 'en' ? resumeEn : resumeTr;
+
   return (
     <section className='contact' id='connect'>
       <Container>
@@ -27,7 +31,12 @@ const Contact = () => {
             </a>
           </Col>
           <Col>
-            <a href='' target='_blank' rel='noreferrer' className='links'>
+            <a
+              href={resumeLink}
+              target='_blank'
+              rel='noreferrer'
+              className='links'
+            >
               <img src={resume} alt='resume' />
               <span className='hidden-text'>{t('My Resume')}</span>
             </a>
