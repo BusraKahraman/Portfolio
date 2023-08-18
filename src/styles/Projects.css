@@ -23,7 +23,10 @@
 }
 
 .project .nav.nav-pills {
-  width: 72%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
@@ -31,6 +34,7 @@
 }
 
 .project .nav.nav-pills .nav-item {
+  flex: 1;
   width: 33.33333%;
 }
 

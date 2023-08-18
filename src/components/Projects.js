@@ -2,6 +2,8 @@ import { Col, Container, Row, Nav, Tab } from 'react-bootstrap';
 import swapi from '../assets/projects/swapi.png';
 import smartBrain from '../assets/projects/smart-brain.png';
 import robofriends from '../assets/projects/robofriends.png';
+import columnCard from '../assets/projects/3-column-card.png';
+import qrCard from '../assets/projects/qr-code-component.png';
 import ProjectCard from './ProjectCard';
 import { useState } from 'react';
 import '../styles/Projects.css';
@@ -34,9 +36,27 @@ const Projects = () => {
       liveLink: 'https://busrakahraman.github.io/Robofriends/',
       category: 'React',
     },
+    {
+      title: 'QR Code Component',
+      description: t('Displaying 3 preview cards side by side using grid'),
+      imgUrl: qrCard,
+      sourceCode: 'https://github.com/BusraKahraman/QR-code-component',
+      liveLink: 'https://busrakahraman.github.io/QR-code-component/',
+      category: 'FEM',
+    },
+    {
+      title: '3 Column Preview Card',
+      description: t('Displaying a QR code in a card'),
+      imgUrl: columnCard,
+      sourceCode:
+        'https://github.com/BusraKahraman/3-Column-Preview-Card-Component',
+      liveLink:
+        'https://busrakahraman.github.io/3-Column-Preview-Card-Component/',
+      category: 'FEM',
+    },
   ];
 
-  const categories = ['All', 'React', 'JavaScript'];
+  const categories = ['All', 'React', 'JavaScript', 'FEM'];
   const [activeCategory, setActiveCategory] = useState('All');
   const filteredProjects =
     activeCategory === 'All'

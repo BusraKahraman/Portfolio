@@ -4,6 +4,7 @@ import logo from '../assets/img/logo.png';
 import linkedin from '../assets/img/linkedin.png';
 import github from '../assets/img/github.png';
 import copyright from '../assets/img/copyright.png';
+import fem from '../assets/img/fem.svg';
 import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
@@ -30,6 +31,13 @@ const Footer = () => {
                 rel='noreferrer'
               >
                 <img src={github} alt='GitHub' className='social-img' />
+              </a>
+              <a
+                href='https://www.frontendmentor.io/profile/BusraKahraman'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img src={fem} alt='Frontend Mentor' />
               </a>
             </div>
             <p>

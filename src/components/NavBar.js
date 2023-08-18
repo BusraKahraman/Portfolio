@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import logo from '../assets/img/logo.png';
 import linkedin from '../assets/img/linkedin.png';
 import github from '../assets/img/github.png';
+import fem from '../assets/img/fem.svg';
 import '../styles/NavBar.css';
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
@@ -105,6 +106,13 @@ const NavBar = () => {
                   rel='noreferrer'
                 >
                   <img src={github} alt='GitHub' />
+                </a>
+                <a
+                  href='https://www.frontendmentor.io/profile/BusraKahraman'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <img src={fem} alt='Frontend Mentor' />
                 </a>
               </div>
               <Link to='contact' smooth={true} duration={500}>
