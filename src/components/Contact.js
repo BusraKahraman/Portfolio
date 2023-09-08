@@ -2,8 +2,8 @@ import '../styles/Contact.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import linkedIn from '../assets/img/linkedin-contact.png';
 import resume from '../assets/img/pdf.png';
-import resumeEn from '../assets/resumes/resumeEn.pdf';
-import resumeTr from '../assets/resumes/resumeTr.pdf';
+import resumeEn from '../assets/resumes/Busra_Kahraman_Resume.pdf';
+import resumeTr from '../assets/resumes/Busra_Kahraman_CV.pdf';
 import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
